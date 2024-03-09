@@ -7,7 +7,7 @@ const SignInPage = () => {
       <div>
         <SignIn
           signUpUrl="/sign-up"
-          afterSignInUrl="/dashboard"
+          afterSignInUrl="/car"
         />
       </div>
     </div>

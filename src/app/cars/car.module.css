@@ -1,0 +1,36 @@
+.user {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.title{
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.cars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.car {
+  width: 32%;
+  border-radius: 4px 
+  ;
+  overflow: hidden;
+}
+.car img {
+  width: 100%;
+  height: 80%;
+}
+@media (max-width: 768px) {
+  .car {
+    width: 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  .car {
+    width: 100%;
+  }
+}

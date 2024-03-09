@@ -5,7 +5,7 @@ function SignUpPage() {
   return (
     <div className={styles.signUp}>
       <div>
-        <SignUp afterSignUpUrl="/dashboard" signInUrl="/sign-in" />
+        <SignUp afterSignUpUrl="/car" signInUrl="/sign-in" />
       </div>
     </div>
   );

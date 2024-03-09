@@ -18,7 +18,7 @@ export default function ImagePage() {
 
   return (
 <>
-<ClerkProvider>
+{/* <ClerkProvider>
     <NavBar />
 
     <button 
@@ -39,7 +39,7 @@ export default function ImagePage() {
       </div>
       <p>{image.description}</p>
     </div>
-    </ClerkProvider>
+    </ClerkProvider> */}
     </>
   );
 }
