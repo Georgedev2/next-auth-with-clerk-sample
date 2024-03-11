@@ -1,13 +1,15 @@
 import { currentUser } from '@clerk/nextjs';
 import styles from './car.module.css';
-import { DOMAIN } from '@clerk/nextjs/server';
+;
 import Link from 'next/link';
+import { OUR_DOMAIN } from '../components/url';
+
 
 async function getCars() {
   let cars = [];
   try {
-    const res = await fetch(`http://localhost:3005/api/cars`);
-    //`${DOMAIN}/api/cars`
+    const res = await fetch(`${OUR_DOMAIN}/api/cars`);
+
     if (res.ok) {
       const body = await res.json();
       cars = body;
@@ -32,7 +34,7 @@ const CarPage = async () => {
       <div className={styles.main}>
         <section className={styles.cars}>
           {cars?.map((car: any) => {
-            console.log(`${DOMAIN}/api/cars/${car.id}`);
+            console.log(`${OUR_DOMAIN}/api/cars/${car.id}`);
             return (
               <Link
                 href={`/cars/${car.id}`}

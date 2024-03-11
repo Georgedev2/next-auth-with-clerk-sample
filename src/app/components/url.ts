@@ -1,2 +1,2 @@
 
-export const DOMAIN="http://localhost:3005"
+export const OUR_DOMAIN="http://localhost:3005"
